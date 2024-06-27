@@ -152,7 +152,7 @@ ol {
   width: 225px;
   background-color: transparent;
   border: none;
-  padding: 3px 14px 3px 0px;
+  padding: 3px 12px 3px 0px;
   border-top: 1px solid var(--color-white);
   border-bottom: 1px solid var(--color-white);
   font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
@@ -165,6 +165,11 @@ ol {
   &:active {
     border: 1px solid var(--color-white);
   }
+
+  &:focus-visible { 
+    outline: 1px solid transparent; 
+    outline-offset: 1px; 
+  }  
 }
 
 .search-form__checkbox-list {
